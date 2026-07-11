@@ -35,3 +35,42 @@ header{
     padding-left: 115px;
 }
 /*Nav End*/
+/*Hero Section Start*/
+.hero-bg{
+    background-image: url("./B14-A01-DevConf-2026/assets/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+     max-width: 900px;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+.cmn-h2 {
+    font-size: 80px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    padding-top: 80px;
+}
+.hero h2 em {
+    font-style: italic;
+}
+.hero-btn{
+     padding: 25px 60px ;
+     font-size: 20px;
+}
+.hero p {
+    font-size: 22px;
+    color: #f3f3f3;
+    margin-bottom: 40px;
+    padding-bottom: 280px;
+}
+
+/*Hero Section End*/
