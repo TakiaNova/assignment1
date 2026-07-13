@@ -1,18 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing:border-box;
     font-family: "Inter", sans-serif;
 }
 /*Nav Start*/
-.logo img{
-    padding-left: 115px;
-}
+
 nav{
     display: flex;
     justify-content: space-between;
     padding: 8px 0;  
 }
-ul{
+nav ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -23,7 +22,6 @@ ul{
     background-color: #1d4ed8FF;
     padding: 10px 30px ;
     border-radius: 12px;
-    font-weight: bold;
     font-size: 12px;
     font-weight: 700;
     color: white;
@@ -31,16 +29,15 @@ ul{
     cursor: pointer;  
 }
 header{
-    padding-right: 115px;
-    padding-left: 115px;
+    padding: 0 30px;
 }
 /*Nav End*/
 /*Hero Section Start*/
 .hero-bg{
-    background-image: url("./B14-A01-DevConf-2026/assets/banner.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),url("./B14-A01-DevConf-2026/assets/banner.jpg");
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -48,29 +45,175 @@ header{
     align-items: center;
 }
 .hero{
-     max-width: 900px;
+    max-width: 900px;
     text-align: center;
     color: #ffffff;
     padding: 20px;
 }
-.cmn-h2 {
+.hero h1 {
     font-size: 80px;
-    font-weight: bold;
-    padding-bottom: 16px;
-    padding-top: 80px;
+    font-weight:700;
+    margin-bottom:16px;
+    line-height:1.1;
+    margin-top: -120px;
 }
-.hero h2 em {
+.hero h1 em {
     font-style: italic;
 }
-.hero-btn{
-     padding: 25px 60px ;
-     font-size: 20px;
+.hero button{
+    padding: 25px 60px ;
+    font-size: 20px;
+    margin-top: 70px;
 }
 .hero p {
-    font-size: 22px;
+    font-size: 24px;
+    line-height:1.7;
     color: #f3f3f3;
-    margin-bottom: 40px;
-    padding-bottom: 280px;
-}
+    margin-bottom: 250px;
+    }
 
 /*Hero Section End*/
+/*Speakers Section Start*/
+.speakers{
+    max-width: 1200px;
+    margin: 100px auto;  
+}
+.speakers h2{
+    font-size: 56px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.speaker-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.speaker-card{
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border:1px solid #e5e7eb;
+}
+.speaker-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+.speaker-content{
+    padding:24px;
+}
+.speaker-content span{
+    color:#2563eb;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+.speaker-content h3{
+    margin-top:12px;
+    font-size:28px;
+    font-weight:700;
+}
+.speaker-content p{
+    margin-top:8px;
+    color:#6b7280;
+}
+/*Speakers Section End*/
+/*Pricing Section Start*/
+.pricing h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+.pricing p{
+    text-align: center;
+    font-size: 16px;
+    color: #575757FF;
+    padding-top: 12px;
+}
+.pricing{
+    max-width:1200px;
+    margin:100px auto;
+}
+.pricing-container{
+    display:flex;
+    gap:30px;
+    margin-top:40px;
+}
+.price-card{
+    flex:1;
+    padding:35px;
+    border:1px solid #ddd;
+    border-radius:16px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+.active{
+    background:#0f172a;
+    color:white;
+}
+.active span{
+    color:#d1d5db;
+}
+.price-card h3{
+    font-size:60px;
+    font-weight:700;
+    margin:10px 0;
+}
+.price-card h5{
+    color:grey;
+    font-size:12px;
+    letter-spacing:1px;
+    font-weight:700;
+}
+.active h5{
+    color: #60a5fa;
+}
+.price-card ul{
+    margin:25px 0;
+    padding-left:20px;
+}
+.price-card li{
+    margin-bottom:15px;
+}
+.price-card ul li::marker{
+    color: #60a5fa;
+}
+.price-card span{
+    color: gray;
+}
+.price-card button{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+#getpro{
+    background-color: #2563eb;
+    color: white;
+}
+.price-card button{
+    background:white;
+    border:2px solid #2563eb;
+    color:#2563eb;
+    font-weight: 700;
+}
+.team{
+    background-color:#f8f9fbFF;
+}
+#contact-btn{
+    color: black;
+    border:2px solid black;
+}
+.price-card:hover{
+    transform:translateY(-8px);
+}
+.active:hover{
+    transform:scale(1.03) translateY(-8px);
+}
+.price-card{
+    transition:.3s;
+}
+/* Pricing Section End*/
